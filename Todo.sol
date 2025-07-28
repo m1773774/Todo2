@@ -14,19 +14,25 @@ contract MyTodo {
 
         todos.push(Todo({text: _text, completed: false}));
 
-        Todo memory todo;
+        Todo memory todo;// = Todo();
         todo.text = _text;
-        todo.completed = false;
-        //todos.push(todo);
+        todo.completed = true;
+        todos.push(todo);
     }
     
     function update(uint _index, string calldata _text) public {
-        Todo storage todo = todos[_index];
+        Todo memory todo = todos[_index];
         todo.text = _text;
-    }
 
+        todos[_index] = todo;
+    }
+              
     function delTodo(uint _index) public {
         delete todos[_index];
+    }
+
+    function getCount() public view returns (uint) {
+        return todos.length;
     }
 
 }

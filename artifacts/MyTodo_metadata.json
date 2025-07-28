@@ -32,6 +32,19 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "getCount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "uint256",
@@ -102,11 +115,11 @@
 	},
 	"sources": {
 		"Todo.sol": {
-			"keccak256": "0xa43bd49b8ed8f780353582a47a1ca69068fbd0ac05cff31a3e0bb8daceea3d68",
+			"keccak256": "0xd275da9d88020114a3a4502036940ae387d6092b7d6c25751998734ad3f1f806",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://6e5f4c0a31411f0f42e2e03497d1f9e1b5f95eb2602a8425fdbef7e8f7b8d621",
-				"dweb:/ipfs/Qmb9Bt5CCGQi92PsfK8j9KrZkeTagNZrQ79LTAAdQ5UGBt"
+				"bzz-raw://d50f75ce01cf2728e551daf4b70c9489ab57f9013f979096755b785f08890a5d",
+				"dweb:/ipfs/QmbvviWEzvswB5n67aNcntBxiDEVBZDi9uhaBvfYK1HdZf"
 			]
 		}
 	},
