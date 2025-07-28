@@ -9,7 +9,7 @@ contract MyArr {
         data.push(value);
     }
 
-    function removeArr(uint index) public {
+    function removeArr(uint index) public returns (uint[] memory) {
         require(index < data.length, "Index out of bounds");
 
         for (uint i = index; i < data.length - 1; i++) {
@@ -17,15 +17,13 @@ contract MyArr {
         }
 
         data.pop();
+
+        return data;
     }
 
     function getArr() public view returns (uint[] memory) {
         return data;
     }
 
-    string public b;
-    int public c;
-
-    uint[5] public data2;
 }
 
