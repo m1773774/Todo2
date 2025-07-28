@@ -4,7 +4,76 @@
 	},
 	"language": "Solidity",
 	"output": {
-		"abi": [],
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_text",
+						"type": "string"
+					}
+				],
+				"name": "create",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_index",
+						"type": "uint256"
+					}
+				],
+				"name": "delTodo",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "todos",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "text",
+						"type": "string"
+					},
+					{
+						"internalType": "bool",
+						"name": "completed",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_index",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_text",
+						"type": "string"
+					}
+				],
+				"name": "update",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
 		"devdoc": {
 			"kind": "dev",
 			"methods": {},
@@ -33,11 +102,11 @@
 	},
 	"sources": {
 		"Todo.sol": {
-			"keccak256": "0x06ad98dac6316b9760518df28ec10555d2dd60dac4592f92a149641ee7767d63",
+			"keccak256": "0xa43bd49b8ed8f780353582a47a1ca69068fbd0ac05cff31a3e0bb8daceea3d68",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://2473251b65941a245b72fcbfb70fffcb6eaebce063c9a08c0407e5a739a4c632",
-				"dweb:/ipfs/QmXeeRnKcHaLuwvYFDpe5RrH2PBfbqPtyVToUvgRq2oAje"
+				"bzz-raw://6e5f4c0a31411f0f42e2e03497d1f9e1b5f95eb2602a8425fdbef7e8f7b8d621",
+				"dweb:/ipfs/Qmb9Bt5CCGQi92PsfK8j9KrZkeTagNZrQ79LTAAdQ5UGBt"
 			]
 		}
 	},
